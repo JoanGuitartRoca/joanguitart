@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <title>Joan Guitart Roca</title>
@@ -12,47 +12,57 @@
 <body>
 
 
- <div class="container">
-    <section>
-        <div class="home-content">
-            <div class="home-text">
-                <h1>JOAN GUITART</h1>
-                <h2>Front-end developer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis mollitia iusto cum error, sint repellendus asperiores omnis rerum nihil adipisci officia esse aspernatur corporis veniam animi quam quidem voluptatum!</p>
-                <button class="btn">More info</button>
-            
+    <div class="container">
+        <section>
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 id="main-title">JOAN GUITART</h1>
+                    <h2 id="secon-title">Front-end developer</h2>
+                    <p id="valor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis mollitia iusto cum error, sint repellendus asperiores omnis rerum nihil adipisci officia esse aspernatur corporis veniam animi quam quidem voluptatum!</p>
+                    <button class="btn" id="btn-home">More info</button>
+                
+                </div>
+                
+                <div class="home-img" id="home-img">
+                    <div class="background-circle" id="home-img-bg"></div>
+                </div>
+
             </div>
             
-            <div class="home-img">
-            <div class="background-circle"></div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="background-home">
+                <div class="background-item" id="bg-item-1"></div>
+                <div class="background-item" id="bg-item-2"></div>
+                <div class="background-item" id="bg-item-3"></div>
 
-        </div>
-        
-        <div class="sidebar">
-            <ul>
-                <li>
-                    <i class="fab fa-github"></i>
-                </li>
-                <li>
-                    <i class="fab fa-instagram"></i>
-                </li>
-                <li>
-                    <i class="fab fa-linkedin"></i>
-                </li>
-                <li>
-                    <i class="far fa-envelope"></i>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <h1>HELLO WORLD</h1>
-    </section>
-    <section>
-        <h1>HELLO WORLD</h1>
-    </section>
- </div>
-    
+            </div>
+        </section>
+
+        <section>
+            <h1>HELLO WORLD</h1>
+        </section>
+        <section>
+            <h1>HELLO WORLD</h1>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="./js/animations.js"></script>
 </body>
 </html>
