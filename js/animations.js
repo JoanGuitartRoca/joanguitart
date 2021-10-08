@@ -1,3 +1,7 @@
+
+
+window.onload = Scrolldown;
+
 gsap.from('#bg-item-1', {
     delay: .2,
 

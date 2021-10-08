@@ -1,7 +1,18 @@
+$color-main: #52DEE5;
+$color-secon: #92DCE5;
+$color-third: #7C7C7C;
+$color-dark: #383D3B;
+$color-ligth: #EEE5E9;
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+i{
+    cursor: pointer;
 }
 
 body {
@@ -28,14 +39,16 @@ body {
             font-size: 50px;
 
             &:nth-child(1){
-                background-color: rgb(228, 228, 228);
+                background-color: $color-ligth;
                 
             }
             &:nth-child(2){
-                background-color: rgb(44, 44, 44)
+                background-color: $color-ligth;
+
             }
             &:nth-child(3){
-                background-color: rgb(27, 27, 27)
+                background-color: $color-ligth;
+
             }
 
             .sidebar{
@@ -49,7 +62,7 @@ body {
                 width: 10%;
                 position: fixed;
                 right: 0%;
-                color: rgb(0, 0, 0);
+                color: $color-dark;
                 ul{
                     display: flex;
                     flex-direction: column;
@@ -69,103 +82,45 @@ body {
     }
 }
 
-
-.home-content{
-    position: relative;
-    display:flex;
-    justify-content: space-around;
+.home-container{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-
+    text-align: center;
+    
     .home-text{
-        z-index: 1;
-        position: relative;
-        font-weight: 200;
-        width: 30%;
 
-        h1:nth-child(1){
-            font-size:45px;
-            font-weight: 900;
-            font-style: italic;
-            letter-spacing: 20px;
+        h1{
+            font-size: 3em;
+            color: $color-dark;
 
+            span{
+                color: $color-secon;
+            }
         }
 
         h2{
-            font-weight: 300;
-            font-size: 20px;
-            letter-spacing: 15px;
-
+            letter-spacing: 20px;
+            font-size: 1em;
+            font-weight: 800;
+            color: $color-main;
+            margin-bottom: 20vh;
+            span{
+                color: $color-third;
+                font-weight: 200;
+            }
         }
 
         p{
-            width: 80%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            text-align: justify;
+            color: $color-third;
+            padding: 0px 25vw;
+            width: auto;
+            font-size: 16px;
+            font-weight: 400;
 
         }
-
-        .btn{
-            padding: 10px;
-            width: 100px;
-            border: none;
-            color: white;
-            background-color: black;
-            cursor: pointer;
-        }
-    }
-
-    .home-img{
-        z-index: 1;
-
-        position: relative;
-        right: 15%;
-        width: 450px;
-        height: 450px;
-        border-radius: 50%;
-        background-color: white;
-
-        .background-circle{
-            margin-left: 35%;
-            width: 550px;
-            height: 550px;
-            border-radius: 50%;
-            background-image: url('../assets/profile.jpg');
-            background-size: 90%;
-            background-position: top 100px;
-            box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.219);
-        }
-    }
-
-}
-
-.background-home{
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-
-    .background-item{
-        z-index: 0;
-
-        position: absolute;
-        left: 40%;
-        width: 100vw;
-        height: inherit;
-        box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.103);
-        background-color: rgb(235, 235, 235);
-
-        &:nth-child(2){
-            z-index: 2;
-            left: 90%;
-        }
-
-        &:nth-child(3){
-            z-index: 1;
-            left: 65%;
-        }
-
     }
 }
+
+
