@@ -4,79 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <title>Joan Guitart Roca</title>
 </head>
 <body>
 
-    <header>
-        <div class="top-bar">
-            <div class="logo">
-                <span>J.</span>
-            </div>
-
-            <nav class="menu">
-                <ul>
-                    <a href="/"><li>ABOUT</li></a>
-                    <a href="/"><li>WORK</li></a>
-                    <a href="/"><li>CONTACT</li></a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container">
-        
-        <section>
-            <div class="home-container">
-                <div class="home-text">
-                    <h1 id="main-title">Hi! I'm <span>Joan.</span></h1>
-                    <h2 id="secon-title">FRONT-END <span> developer </span></h2>
-                    <p id="valor">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Provident nobis mollitia iusto cum error, sint repellendus 
-                        asperiores omnis rerum nihil adipisci officia esse aspernatur 
-                        corporis veniam animi quam quidem voluptatum! Provident nobis mollitia iusto cum error, sint repellendus 
-                        asperiores omnis rerum nihil adipisci officia </p>
-
+    <section class="header">
+        <!-- <nav>
+          <a href="inde.html"><img src="assets/img/logo.png" alt=""></a>
+          <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">COURSE</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">CONTATC</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> -->
+        <div class="content-wrapper">
+            <div class="text-box">
+                <h1>Hi, I am Joan</h1>
+                <h2>
+                    Front End dev.
+                </h2>
+                <div class="social-icons">
+                    <div class="icon">
+                        <i class="far fa-envelope" onclick="showMenu()"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-github" onclick="showMenu()"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-linkedin" onclick="showMenu()"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-instagram" onclick="showMenu()"></i>
+                    </div>
                 </div>
             </div>
-            
-            <div class="sidebar">
-                <ul>
-                    <li>
-                        <i class="fab fa-github"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                    <li>
-                        <i class="fab fa-linkedin"></i>
-                    </li>
-                    <li>
-                        <i class="far fa-envelope"></i>
-                    </li>
-                </ul>
+        </div>
+        <div class="value">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim, nostrum tempore saepe rerum earum, amet debitis aspernatur quisquam assumenda, dolorem distinctio? Sapiente ab ullam assumenda dolor hic error alias.</p>
+        </div>
+        <div class="img-container">
+        </div>
+      </section>
+
+      <section class="value-proposal">
+        <div class="content-wrapper">
+
+            <div class="flex-box">
+                <div class="text-box">
+                    <h3>I like to make websites with <span>soul</span></h3>
+                    <p>Nowadays every business needs a website, and it is very important that 
+                    your website stands out from your competition. 
+                    </p>
+                    <button class="btn-default">let me help you</button>
+                </div>
+                <div class="icons">
+                    <div class="left">
+                    <div class="icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    </div>
+                    <div class="right">
+                    <div class="icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-instagram" onclick="showMenu()"></i>
+                    </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="background-home">
-                <div class="background-item" id="bg-item-1"></div>
-                <div class="background-item" id="bg-item-2"></div>
-                <div class="background-item" id="bg-item-3"></div>
+            <div class="rules">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                
+                    <div class="items">
+                        <span>MINIMAL</span>
+                        <span>CR34TIV3</span>
+                        <span>RESPONSIVE</span>
+                    </div>
+                    
+                </div>
             </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-            <h1>HELLO WORLD</h1>
-        </section>
+      <section class="portfolio-section">
+        <div class="container">
+  <!--         <h2 class="title">Portfolio</h2> -->
+          <span class="hr-role"></span>
+          <div class="portfolio-tab">
+            <ul id="filters" class="clearfix">
+                <li class="filter active" data-filter=".snippet, .design, .full-project">all</li>
+                <li class="filter" data-filter=".snippet">Snippets</li>
+                <li class="filter" data-filter=".design">Design</li>
+                <li class="filter" data-filter=".full-project">Full Project</li>
+            </ul>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio snippet" data-cat="snippet">
+              <div class="portfolio-wrapper first">
+                <div class="portfolio-bg"></div>
+                <div class="label">
+                  <div class="label-text">
+                    <h4>Project Name</h4>
+                    <span class="text-category">Snippet</span>
+                    <a href="#" class="template-btn" target="_blank">View</a>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio design" data-cat="design">
+              <div class="portfolio-wrapper second">
+                <div class="portfolio-bg"></div>
+                <div class="label">
+                  <div class="label-text">
+                    <h4>Project Name</h4>
+                    <span class="text-category">Design</span>
+                    <a href="#" class="template-btn" target="_blank">View</a>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio full-project" data-cat="full-project">
+              <div class="portfolio-wrapper third">
+                <div class="portfolio-bg"></div>
+                <div class="label">
+                  <div class="label-text">
+                    <h4>Project Name</h4>
+                    <span class="text-category">Full Project</span>
+                    <a href="#" class="template-btn" target="_blank">View</a>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio design" data-cat="design">
+              <div class="portfolio-wrapper second">
+                <div class="portfolio-bg"></div>
+                <div class="label">
+                  <div class="label-text">
+                    <h4>Project Name</h4>
+                    <span class="text-category">Design</span>
+                    <a href="#" class="template-btn" target="_blank">View</a>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio full-project" data-cat="full-project">
+              <div class="portfolio-wrapper third">
+                <div class="portfolio-bg"></div>
+                <div class="label">
+                  <div class="label-text">
+                    <h4>Project Name</h4>
+                    <span class="text-category">Full Project</span>
+                    <a href="#" class="template-btn" target="_blank">View</a>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio snippet" data-cat="snippet">
+              <div class="portfolio-wrapper first">
+                <div class="portfolio-bg"></div>
+                <div class="label">
+                  <div class="label-text">
+                    <h4>Project Name</h4>
+                    <span class="text-category">Snippet</span>
+                    <a href="#" class="template-btn" target="_blank">View</a>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section>
- 
-        </section>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="./js/animations.js"></script>
+   
 </body>
 </html>
