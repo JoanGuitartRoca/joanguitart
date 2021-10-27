@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+
     <title>Joan Guitart Roca</title>
 </head>
 <body>
@@ -48,9 +53,12 @@
                 </div>
             </div>
         </div>
-        <div class="value">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim, nostrum tempore saepe rerum earum, amet debitis aspernatur quisquam assumenda, dolorem distinctio? Sapiente ab ullam assumenda dolor hic error alias.</p>
+        <div class="value-content">
+          <div class="value">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim, nostrum tempore saepe rerum earum, amet debitis aspernatur quisquam assumenda, dolorem distinctio? Sapiente ab ullam assumenda dolor hic error alias.</p>
+          </div>
         </div>
+
         <div class="img-container">
         </div>
       </section>
@@ -106,104 +114,43 @@
         </div>
       </section>
 
-
-<!-- https://codepen.io/jkmquitasol/pen/JxrKxX -->
-
-      <section class="portfolio-section">
-        <div class="container">
-  <!--         <h2 class="title">Portfolio</h2> -->
-          <span class="hr-role"></span>
-          <div class="portfolio-tab">
-            <ul id="filters" class="clearfix">
-                <li class="filter active" data-filter=".snippet, .design, .full-project">all</li>
-                <li class="filter" data-filter=".snippet">Snippets</li>
-                <li class="filter" data-filter=".design">Design</li>
-                <li class="filter" data-filter=".full-project">Full Project</li>
-            </ul>
+      <section class="portfolio">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/portada.png" alt="">
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
           </div>
-          <div class="portfolio-grid">
-            <div class="portfolio snippet" data-cat="snippet">
-              <div class="portfolio-wrapper first">
-                <div class="portfolio-bg"></div>
-                <div class="label">
-                  <div class="label-text">
-                    <h4>Project Name</h4>
-                    <span class="text-category">Snippet</span>
-                    <a href="#" class="template-btn" target="_blank">View</a>
-                  </div>
-                  <div class="label-bg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio design" data-cat="design">
-              <div class="portfolio-wrapper second">
-                <div class="portfolio-bg"></div>
-                <div class="label">
-                  <div class="label-text">
-                    <h4>Project Name</h4>
-                    <span class="text-category">Design</span>
-                    <a href="#" class="template-btn" target="_blank">View</a>
-                  </div>
-                  <div class="label-bg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio full-project" data-cat="full-project">
-              <div class="portfolio-wrapper third">
-                <div class="portfolio-bg"></div>
-                <div class="label">
-                  <div class="label-text">
-                    <h4>Project Name</h4>
-                    <span class="text-category">Full Project</span>
-                    <a href="#" class="template-btn" target="_blank">View</a>
-                  </div>
-                  <div class="label-bg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio design" data-cat="design">
-              <div class="portfolio-wrapper second">
-                <div class="portfolio-bg"></div>
-                <div class="label">
-                  <div class="label-text">
-                    <h4>Project Name</h4>
-                    <span class="text-category">Design</span>
-                    <a href="#" class="template-btn" target="_blank">View</a>
-                  </div>
-                  <div class="label-bg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio full-project" data-cat="full-project">
-              <div class="portfolio-wrapper third">
-                <div class="portfolio-bg"></div>
-                <div class="label">
-                  <div class="label-text">
-                    <h4>Project Name</h4>
-                    <span class="text-category">Full Project</span>
-                    <a href="#" class="template-btn" target="_blank">View</a>
-                  </div>
-                  <div class="label-bg"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio snippet" data-cat="snippet">
-              <div class="portfolio-wrapper first">
-                <div class="portfolio-bg"></div>
-                <div class="label">
-                  <div class="label-text">
-                    <h4>Project Name</h4>
-                    <span class="text-category">Snippet</span>
-                    <a href="#" class="template-btn" target="_blank">View</a>
-                  </div>
-                  <div class="label-bg"> </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
    
 </body>
 </html>

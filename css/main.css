@@ -102,9 +102,16 @@ section:nth-child(2) {
   color: white;
 }
 
-.header .value {
+.header .value-content {
+  position: relative;
+  height: 30vh;
+}
+
+.header .value-content .value {
+  position: absolute;
+  bottom: 0%;
   width: 50vw;
-  min-height: 30vh;
+  min-height: 20vh;
   background-color: #31685E;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,11 +124,11 @@ section:nth-child(2) {
           align-items: center;
 }
 
-.header .value p {
-  width: 80%;
+.header .value-content .value p {
+  width: 60%;
   position: relative;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 
@@ -255,5 +262,38 @@ section:nth-child(2) {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 5px;
+}
+
+.portfolio {
+  position: relative;
+}
+
+.portfolio .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.portfolio .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolio .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

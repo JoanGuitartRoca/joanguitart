@@ -100,22 +100,30 @@ section{
         }
     }
 
-    .value{
-        width: 50vw;
-        min-height: 30vh;
-        background-color: $secondary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        p{
-            width: 80%;
-            position: relative;
-            text-align: center;
-            font-size: 16px;
-            color: white;
+    .value-content{
+        position: relative;
+        height: 30vh;
+
+        .value{
+            position: absolute;
+            bottom: 0%;
+            width: 50vw;
+            min-height: 20vh;
+            background-color: $secondary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            p{
+                width: 60%;
+                position: relative;
+                text-align: center;
+                font-size: 14px;
+                color: white;
+            }
         }
     }
+    
 
 }
 
@@ -216,9 +224,42 @@ section{
                 }
             }
         }
-
-        
-        
-
     }
+}
+
+
+.portfolio{
+    position: relative;
+
+    .swiper {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+      }
 }
