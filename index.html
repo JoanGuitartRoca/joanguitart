@@ -115,42 +115,43 @@
       </section>
 
       <section class="portfolio">
+        <div class="content-wrapper">
+          <div class="text-box">
+            <h3>My work</h3>
+            <p>All the projects that I have contributed to</p>
+          </div>
+        </div>
+
         <!-- Swiper -->
         <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/portada.png" alt="">
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-wrapper" id="portfolio-box">
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </section>
 
+      
 
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 0,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   });
 </script>
-   
+<script src="js/portfolio.js"></script>
 </body>
 </html>

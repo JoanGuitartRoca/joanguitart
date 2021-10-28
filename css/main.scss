@@ -40,6 +40,21 @@ section{
     cursor: pointer;
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: $main-color;
+    color: white;
+    border: none !important;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
 .header{
     position: relative;
     
@@ -230,13 +245,36 @@ section{
 
 .portfolio{
     position: relative;
+    background-color: #42A492;
+
+    .content-wrapper{
+        position: sticky;
+        top: 0;
+        margin-bottom: 10vh;
+        color: white;
+
+        .text-box{
+            
+            h3{
+                font-size: 50px;
+
+            }
+
+            p{
+
+            }
+        }
+    }
 
     .swiper {
+        position: relative;
+        bottom: 0%;
         width: 100%;
         height: 100vh;
       }
 
       .swiper-slide {
+        position: relative;
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -254,6 +292,57 @@ section{
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+
+        &:hover{
+            .info{
+                transform: translate(0, 0%);
+            }
+        }
+
+        .info{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+            background-color:#31685e9c;
+            color: white;
+            transform: translate(0, 100%);
+            transition: .4s;
+
+            .text-box{
+                width: 60%;
+
+                h4{
+                    font-size: 30px;
+                }
+                
+                h5{
+                    font-size: 20px;
+                    font-style: italic;
+                    font-weight: 500;
+                    margin-bottom: 50px;
+                }
+
+                p{
+                    font-size: 18px;
+                }
+
+                button{
+                    position: relative;
+                    top: 20%;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding: 10px;
+                    width: 100px;
+                }
+            }
+
+        }
+
       }
 
       .swiper-slide img {

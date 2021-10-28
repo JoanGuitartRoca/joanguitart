@@ -33,6 +33,21 @@ section:nth-child(2) {
   cursor: pointer;
 }
 
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  background-color: #42A492;
+  color: white;
+  border: none !important;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
 .header {
   position: relative;
 }
@@ -266,14 +281,30 @@ section:nth-child(2) {
 
 .portfolio {
   position: relative;
+  background-color: #42A492;
+}
+
+.portfolio .content-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10vh;
+  color: white;
+}
+
+.portfolio .content-wrapper .text-box h3 {
+  font-size: 50px;
 }
 
 .portfolio .swiper {
+  position: relative;
+  bottom: 0%;
   width: 100%;
   height: 100vh;
 }
 
 .portfolio .swiper-slide {
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -287,6 +318,65 @@ section:nth-child(2) {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.portfolio .swiper-slide:hover .info {
+  -webkit-transform: translate(0, 0%);
+          transform: translate(0, 0%);
+}
+
+.portfolio .swiper-slide .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  background-color: #31685e9c;
+  color: white;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.portfolio .swiper-slide .info .text-box {
+  width: 60%;
+}
+
+.portfolio .swiper-slide .info .text-box h4 {
+  font-size: 30px;
+}
+
+.portfolio .swiper-slide .info .text-box h5 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.portfolio .swiper-slide .info .text-box p {
+  font-size: 18px;
+}
+
+.portfolio .swiper-slide .info .text-box button {
+  position: relative;
+  top: 20%;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  width: 100px;
 }
 
 .portfolio .swiper-slide img {
